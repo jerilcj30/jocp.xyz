@@ -1,0 +1,259 @@
+{{define "page"}}
+
+
+<div class="outermost__container w-full">
+    <div class="inner__container max-w-[1440px] mx-auto">
+        <!-- Hero section -->
+        <section
+            class="hero bg-[#084D9D] font-poppins min-h-[75vh] lg:bg-[url('../../assets/images/homeservices/hero.png')] lg:bg-cover lg:bg-no-repeat">
+            <div class="outer__container">
+                <div class="navbar ml-[10%] mr-[10%] flex justify-between items-center pt-8 ">
+                    <div class="logo">
+                        <a href="/homeservices">
+                            <img class="w-[54px] h-[54px] inline-block" src="../../assets/images/homeservices/logo.png"
+                            alt="">
+                        <span class="italic text-lg text-white">H.S</span>
+                        </a>
+                    </div>
+                    <div
+                        class="hidden lg:block menus absolute lg:static top-24 lg:top-auto right-0 lg:right-auto w-full lg:w-auto h-62 lg:h-auto bg-white lg:bg-transparent rounded-lg">
+                        <ul class="lg:flex lg:gap-5 text-black lg:text-white text-sm">
+                            <li
+                                class="w-full lg:w-auto hover:bg-gray-500 lg:hover:bg-transparent p-4 flex items-center justify-center">
+                                <a class="lg:hover:text-gray-500 w-full lg:w-auto text-center " href="/homeservices">Home</a>
+                            </li>
+                            <li
+                                class="w-full lg:w-auto hover:bg-gray-500 lg:hover:bg-transparent p-4 flex items-center justify-center">
+                                <a class="lg:hover:text-gray-500 w-full lg:w-auto text-center" href="#about__us__section">About</a>
+                            </li>
+                            <li
+                                class="w-full lg:w-auto hover:bg-gray-500 lg:hover:bg-transparent p-4 flex items-center justify-center">
+                                <a class="lg:hover:text-gray-500 w-full lg:w-auto text-center " href="#services__section">Services</a>
+                            </li>
+                            <li
+                                class="w-full lg:w-auto hover:bg-gray-500 lg:hover:bg-transparent p-4 flex items-center justify-center">
+                                <a class="lg:hover:text-gray-500 w-full lg:w-auto text-center" href="">Privacy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <img class="toggler w-[54px] h-[54px] inline-block lg:hidden cursor-pointer"
+                        src="../../assets/images/homeservices/menu.svg" alt="">
+                </div>
+                <div class="ml-[10%] mr-[10%] flex justify-between items-center">
+                    <!--  -->
+
+                    <div class="hero__content text-white pt-36 pb-8 flex flex-col lg:w-1/2">
+                        <p class="text-5xl font-extrabold leading-relaxed">
+                            Your Partner for Trusted Home Services
+                        </p>
+                        <p class="text-lg pt-8 font-light leading-relaxed pb-4">Finding reliable help for your home
+                            shouldn't
+                            be a hassle. With us, you gain access to trusted professionals ready to handle everything
+                            from
+                            quick fixes to major renovations</p>
+                        <a class="bg-[#D9D9D9] rounded-lg p-5 w-fit mt-8" href="#about__us__section"><span
+                                class="text-black text-2xl font-extrabold">Learn More</span></a>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- Trusted section -->
+        <section class="trusted__section font-poppins bg-[#00FFA7] font-extralight leading-relaxed">
+            <div class="outer__container">
+                <div class="ml-[10%] mr-[10%] flex justify-between items-center">
+                    <p class="italic text-lg ">
+                        Trusted by leading industry certifications and partners
+                    </p>
+                    <img class="w[100px] h-[87px]" src="../../assets/images/homeservices/trusted.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about__us__section" class="about__us__section font-poppins bg-[#ebe8e8] font-extralight leading-relaxed pb-4">
+            <div class="outer__container">
+                <div class="ml-[10%] mr-[10%]">
+                    <p class="text-center font-extrabold text-3xl p-4">About</p>
+                    <div class="about__content flex flex-col lg:flex-row lg:gap-4 lg:justify-between">
+                        <img class="w-full h-auto object-cover lg:order-2 rounded-xl"
+                            src="../../assets/images/homeservices/about.png" alt="">
+                        <div class="lg:w-2/3 about_content__paragraph lg:order-1">
+                            <p class="pt-4">We are dedicated to providing exceptional home services that enhance the
+                                comfort and safety of your living space. With years of experience in the industry, our
+                                team of skilled professionals is committed to delivering high-quality workmanship and
+                                ensuring customer satisfaction. We offer a range of services, including roofing,
+                                plumbing, solar installations, and more.</p>
+
+                            <p class="pt-4">
+                                Our approach centers on building lasting relationships with clients by offering reliable
+                                solutions tailored to meet their specific needs. We understand that every home is
+                                unique, and we strive to provide personalized services that make a meaningful impact on
+                                each project.
+                            </p>
+
+                            <p class="pt-4">
+                                Our mission is to make home improvement accessible and stress-free, completing every
+                                project with precision and care. Trust us to be your partner in creating a better home
+                                that you can enjoy for years to come.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Services Section -->
+        <section id="services__section" class="services__section font-poppins bg-[whitesmoke] pb-4">
+            <div class="outer__container">
+                <div class="ml-[10%] mr-[10%]">
+                    <p class="text-center font-extrabold text-3xl p-4">Our Services</p>
+                    <div class="card__container grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+                        <div class="roofing__services">
+                            <img class="w-full h-[224px] object-cover rounded-t-lg"
+                                src="../../assets/images/homeservices/roofing.jpg" alt="">
+                            <div class="bg-[#D9D9D9] p-4 rounded-b-lg">
+                                <p class="font-bold text-center">Roofing Services</p>
+                                <p class="font-light leading-relaxed pt-4">Our roofing services offer top-notch
+                                    solutions
+                                    for
+                                    your
+                                    home, from repairs to new installations, using the best quality materials for
+                                    lasting
+                                    protection.</p>
+                            </div>
+                        </div>
+
+                        <div class="gutter__services">
+                            <img class="w-full h-[224px] object-cover rounded-t-lg"
+                                src="../../assets/images/homeservices/gutter.jpg" alt="">
+                            <div class="bg-[#D9D9D9] p-4 rounded-b-lg">
+                                <p class="font-bold text-center">Gutter Services</p>
+                                <p class="font-light leading-relaxed pt-4">Our gutter services ensure efficient water
+                                    drainage,
+                                    preventing damage and protecting your home. We provide expert installation, repair,
+                                    and
+                                    maintenance.</p>
+                            </div>
+                        </div>
+
+                        <div class="solar__services">
+                            <img class="w-full h-[224px] object-cover rounded-t-lg"
+                                src="../../assets/images/homeservices/solar.jpg" alt="">
+                            <div class="bg-[#D9D9D9] p-4 rounded-b-lg">
+                                <p class="font-bold text-center">Solar Services</p>
+                                <p class="font-light leading-relaxed pt-4">Our solar services help you harness clean
+                                    energy,
+                                    reducing your electricity bills. We handle installation and maintenance for optimal
+                                    performance.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="plumbing__services">
+                            <img class="w-full h-[224px] object-cover rounded-t-lg"
+                                src="../../assets/images/homeservices/plumbing.png" alt="">
+                            <div class="bg-[#D9D9D9] p-4 rounded-b-lg">
+                                <p class="font-bold text-center">Plumbing Services</p>
+                                <p class="font-light leading-relaxed pt-4">Our plumbing services cover everything from
+                                    repairs
+                                    to
+                                    new installations, ensuring your home's water systems run smoothly and efficiently
+                                    at
+                                    all
+                                    times.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="insulation__services">
+                            <img class="w-full h-[224px] object-cover rounded-t-lg"
+                                src="../../assets/images/homeservices/insulation.png" alt="">
+                            <div class="bg-[#D9D9D9] p-4 rounded-b-lg">
+                                <p class="font-bold text-center">Insulation Services</p>
+                                <p class="font-light leading-relaxed pt-4">Our insulation services improve energy
+                                    efficiency
+                                    and
+                                    comfort in your home. We provide expert installation to keep your space warm in
+                                    winter
+                                    and
+                                    cool
+                                    in summer.</p>
+                            </div>
+                        </div>
+
+                        <div class="handyman__services">
+                            <img class="w-full h-[224px] object-cover rounded-t-lg"
+                                src="../../assets/images/homeservices/handyman.png" alt="">
+                            <div class="bg-[#D9D9D9] p-4 rounded-b-lg">
+                                <p class="font-bold text-center">Handyman Services</p>
+                                <p class="font-light leading-relaxed pt-4">Our handyman services handle a variety of
+                                    home
+                                    repairs
+                                    and maintenance tasks, providing reliable solutions to keep your home in top shape.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials__section font-poppins bg-[#D3D3D3] font-extralight leading-relaxed">
+            <div class="outer__container">
+                <div class="ml-[10%] mr-[10%]">
+                    <p class="text-center font-extrabold text-3xl p-4">Testimonials</p>
+                    <div class="testimonial__1 flex flex-col items-center pb-4 sm:flex-row sm:gap-4">
+                        <img class="w-[100px] h-[100px] pb-4" src="../../assets/images/homeservices/testimonial1.png"
+                            alt="">
+                        <p>The team was professional and efficient, transforming our old, leaky roof into a sturdy and
+                            beautiful
+                            one. We couldn't be happier with the results!</p>
+                    </div>
+
+                    <div class="testimonial__2 flex flex-col items-center pb-4 sm:flex-row sm:gap-4">
+                        <img class="w-[100px] h-[100px] pb-4" src="../../assets/images/homeservices/testimonial2.png"
+                            alt="">
+                        <p>Their handyman services were a lifesaver! From small repairs to larger tasks, they handled
+                            everything
+                            flawlessly and with great attention to detail.</p>
+                    </div>
+
+                    <div class="testimonial__3 flex flex-col items-center pb-4 sm:flex-row sm:gap-4">
+                        <img class="w-[100px] h-[100px] pb-4" src="../../assets/images/homeservices/testimonial3.png"
+                            alt="">
+                        <p>Fast, reliable, and thorough—our plumbing issues were resolved in no time. Their expertise
+                            and
+                            friendly service made the experience stress-free.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer section -->
+        <section class="footer__section font-poppins font-extralight leading-relaxed bg-black">
+            <div class="outer__container">
+                <div class="ml-[10%] mr-[10%]">
+                    <p class="italic text-white p-4">© 2024 johcp. All rights reserved.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<!-- Page-Specific JavaScript -->
+<script>
+    const toggleBtn = document.querySelector('.toggler')
+    const dropDownMenu = document.querySelector('.menus')   
+
+    toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle('hidden')
+    }
+ </script>
+
+{{end}}
